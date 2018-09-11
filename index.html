@@ -1,1 +1,58 @@
-'hello world'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="{{ static_url('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ static_url('css/AdminLTE.min.css') }}" rel="stylesheet">
+    <link href="{{ static_url('css/font-awesome.min.css')}}" rel="stylesheet">
+</head>
+<body>
+
+    <div class="box box-primary" style="width: 800px;margin:20px auto">
+            <div class="box-header with-border">
+              <h3 class="box-title" style="display: block;width:100px;margin: auto">520 情人节</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" method="post" action="">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">送给</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" name="love_name" placeholder="爱人姓名昵称">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">祝福的话</label>
+                    <textarea class="form-control" name="content" id="exampleInputPassword1" rows="10" placeholder="情人节快乐"></textarea>
+                    <p class="help-block">把要对爱人的祝福写在这里</p>
+                </div>
+
+                  <div class="form-group">
+                  <label for="lovetime">在一起的时间</label>
+                      <input type="text" class="form-control" id="lovetime" name="lovetime" placeholder="你们在一起的时间">
+                      <p class="help-block">时间格式：2007-02-14</p>
+                  </div>
+                  <div class="form-group">
+                  <label for="secrettime">关注T暗恋T的时间</label>
+                      <input type="text" class="form-control" id="secrettime" name="secrettime" placeholder="关注T暗恋T的时间">
+                      <p class="help-block">时间格式：2007-02-14</p>
+                  </div>
+
+                  <div class="form-group">
+                  <label for="username">落款</label>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="你的姓名或昵称">
+                  </div>
+
+
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">点击生成专属表白页面</button>
+              </div>
+            </form>
+          </div>
+</body>
+
+</html>
