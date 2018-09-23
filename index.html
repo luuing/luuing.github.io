@@ -104,9 +104,43 @@ img:hover{
 }
 
 
+* {
+	margin:0;
+	padding:0;
+}
+@keyframes typing {
+	from {
+	width:0;
+}
+}@keyframes blink-caret {
+	50% {
+	/*border-color:transparent;*/
+}
+}
+h4{
+	font:bold 200% Consolas,Monaco,monospace;
+	border-right:.1em solid;
+	width:16.5em;
+	/* fallback */
+		 width:15ch;
+	/* # of chars */
+		 margin:2em 1em;
+	white-space:nowrap;
+	overflow:hidden;
+	animation:typing 2s steps(30,end),/* # of steps = # of chars */
+		 blink-caret .5s step-end infinite alternate;
+}
+
+
 .text3D{	
 		color: #ff0;
+		font-weight:bold;
 		text-shadow:0 0 5px #CCCCCC, 0 0 10px #CCCCCC, 0 0 15px #CCCCCC, 0 0 20px #095816, 0 0 25px #095816, 0 0 30px #095816, 0 0 50px #095816, 0 0 80px #095816, 0 0 100px #095816, 0 0 150px #095816;
+		}
+		
+.text{
+		color: #ff0; 
+		text-shadow: 0 1px 0 #ff0, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.3),0 3px 5px rgba(0,0,0,0.2),0 5px 10px rgba(0,0,0,0.25);。
 		}
 </style>
 
@@ -129,7 +163,7 @@ img:hover{
 			<figure><img src="img/9.jpg" alt=""></figure>
 		</div>
 	</div>
-
+	<h4 class="text"> []~(￣▽￣)~* </h4>
 
   <script src='js/none.js'></script>
 
